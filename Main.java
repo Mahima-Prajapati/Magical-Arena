@@ -7,11 +7,11 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         // Prompt user to enter name for Player
-        System.out.println("Enter name of Player " + player);
+        System.out.println("Enter name of Player " + player +": ");
         String name = scanner.nextLine();
 
         // Prompt user to enter attributes for Player
-        System.out.println("Enter attributes for Player " + player);
+        System.out.println("Enter attributes for Player " + player + " - ");
 
         System.out.println("Enter health attribute: ");
         int health = scanner.nextInt();
@@ -22,6 +22,8 @@ public class Main {
         System.out.println("Enter attack attribute: ");
         int attack = scanner.nextInt();
     	
+        System.out.println();
+        
         // Returning a new Player with the provided attributes
         return new Player(name, health, strength, attack);
     }

@@ -42,7 +42,7 @@ class Player {
     public int calculateAttackDamage() {
         int diceValue = rollDice();
         int attackValue = attack * diceValue;
-        System.out.println(this.getName() + ": Attack Value: " + attackValue);
+        System.out.println(this.getName() + ": Attack Value = " + attackValue);
         return attackValue;
     }
     
@@ -50,14 +50,14 @@ class Player {
     public int calculateDefendStrength() {
         int diceValue = rollDice();
         int defendValue = strength * diceValue;
-        System.out.println(this.getName() + ": Defend Value: " + defendValue);
+        System.out.println(this.getName() + ": Defend Value = " + defendValue);
         return defendValue;
     }
 
     // Method for rolling a die
     public int rollDice() {
         int diceValue = random.nextInt(6) + 1;
-        System.out.println(this.getName() + ": Rolling dice; Got dice value of " + diceValue);
+        System.out.println(this.getName() + ": Rolling dice and got dice value of " + diceValue);
         return diceValue; // Return a random integer between 1 and 6
     }
 }

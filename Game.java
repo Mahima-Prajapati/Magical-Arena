@@ -19,7 +19,7 @@ public class Game {
         
         while (playerA.isAlive() && playerB.isAlive()) {
         	pause();
-            System.out.println("\n\nRound Number : " + ++rounds + " Started\n");
+            System.out.println("\nRound Number : " + ++rounds + " Started\n");
             attack(attacker, defender);
 
             // Swaping attacker and defender for the next round
@@ -32,7 +32,7 @@ public class Game {
         Player winner = playerA.isAlive() ? playerA : playerB;
         Player looser = (winner==playerA) ? playerB : playerA;
 
-        System.out.println("\n\n-------------Game Over-------------------\n");
+        System.out.println("\n\n-------------GAME OVER-------------------\n");
 
         // Showing the results of Game
         System.out.println("Winner: " + winner.getName());
@@ -42,14 +42,12 @@ public class Game {
     
     // Method to handle an attack between two players
     public void attack(Player attacker, Player defender) {
-    	System.out.println(attacker.getName() + " is the attacker");
+    	System.out.println(attacker.getName() + " is the attacker and " + defender.getName() + " is the defender");
         int attackDamage = attacker.calculateAttackDamage();
-
-        System.out.println(defender.getName() + " is the defender");
         int defendStrength = defender.calculateDefendStrength();
 
         int damageTaken = (attackDamage - defendStrength >= 0) ? (attackDamage - defendStrength) : 0;
-        System.out.println(attacker.getName() + ": Damaging " + defender.getName() + " with:" + damageTaken);
+        System.out.println(attacker.getName() + ": Damaging " + defender.getName() + " with: " + damageTaken);
 
         defender.receiveDamage(damageTaken); // Apply damage to the defending player
         
