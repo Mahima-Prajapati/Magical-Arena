@@ -12,8 +12,14 @@ public class Main {
 
         // Prompt user to enter attributes for Player
         System.out.println("Enter attributes for Player " + player);
+
+        System.out.println("Enter health attribute: ");
         int health = scanner.nextInt();
+
+        System.out.println("Enter strength attribute: ");
         int strength = scanner.nextInt();
+
+        System.out.println("Enter attack attribute: ");
         int attack = scanner.nextInt();
     	
         // Returning a new Player with the provided attributes
