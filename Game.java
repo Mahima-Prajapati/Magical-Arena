@@ -13,13 +13,13 @@ public class Game {
     	Player attacker = (playerA.getHealth() <= playerB.getHealth()) ? playerA : playerB;
         Player defender = (attacker == playerA) ? playerB : playerA;
         
-        System.out.println("\n\nStarting the Game between " + this.playerA.getName() + " - " + this.playerB.getName());
+        System.out.println("\n-----------Starting the Game between " + this.playerA.getName() + " - " + this.playerB.getName() + "------------");
         
         int rounds = 0;
         
         while (playerA.isAlive() && playerB.isAlive()) {
         	pause();
-            System.out.println("\n\nRound Number : " + ++rounds + "started\n");
+            System.out.println("\n\nRound Number : " + ++rounds + " Started\n");
             attack(attacker, defender);
 
             // Swaping attacker and defender for the next round
@@ -32,7 +32,7 @@ public class Game {
         Player winner = playerA.isAlive() ? playerA : playerB;
         Player looser = (winner==playerA) ? playerB : playerA;
 
-        System.out.println("\n\n\nGame Over\n\n");
+        System.out.println("\n\n-------------Game Over-------------------\n");
 
         // Showing the results of Game
         System.out.println("Winner: " + winner.getName());

@@ -15,8 +15,6 @@ public class Main {
         int health = scanner.nextInt();
         int strength = scanner.nextInt();
         int attack = scanner.nextInt();
-
-        scanner.close();
     	
         // Returning a new Player with the provided attributes
         return new Player(name, health, strength, attack);
