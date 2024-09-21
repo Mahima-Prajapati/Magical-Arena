@@ -13,7 +13,7 @@ public class Game {
     	Player attacker = (playerA.getHealth() <= playerB.getHealth()) ? playerA : playerB;
         Player defender = (attacker == playerA) ? playerB : playerA;
         
-        System.out.println("\n-----------Starting the Game between " + this.playerA.getName() + " - " + this.playerB.getName() + "------------");
+        System.out.println("\n------------------Starting the Game -------------------");
         
         int rounds = 0;
         
