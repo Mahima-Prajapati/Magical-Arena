@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class Main {
-   
 	// Method to create a player based on user input
     public static Player createPlayer(char player){
         Scanner scanner = new Scanner(System.in);
