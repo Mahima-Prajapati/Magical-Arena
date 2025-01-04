@@ -32,6 +32,8 @@ public class Main {
         Player playerA = createPlayer('A');
         Player playerB = createPlayer('B');
         
+        System.out.println("My name is Shivam");
+        
         // Creating a Game with the above players
         Game game = new Game(playerA, playerB);
 
