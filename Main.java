@@ -32,9 +32,8 @@ public class Main {
         Player playerA = createPlayer('A');
         Player playerB = createPlayer('B');
 
-        System.out.println("My name is Mahima");
-        System.out.println("My name is Prajapati");
-        
+        System.out.println("This is remote main branch");
+
         // Creating a Game with the above players
         Game game = new Game(playerA, playerB);
 
