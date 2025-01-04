@@ -34,6 +34,8 @@ public class Main {
 
 	System.out.println("My name is Lavish");
         
+        System.out.println("My name is Shivam");
+        
         // Creating a Game with the above players
         Game game = new Game(playerA, playerB);
 
