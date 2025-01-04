@@ -31,5 +31,5 @@ Java installed on your system.
  2. Run the game using command <br>
  `java Main`
 
-My name is Shivam
-This is my local branch 2
+My name is Mahima
+This is my local branch
