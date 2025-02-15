@@ -39,6 +39,8 @@ public class Game {
 
         System.out.println("\n\n-------------GAME OVER-------------------\n");
 
+        System.out.println("Shivam");
+
         // Showing the results of Game
         System.out.println("Winner: " + winner.getName());
         System.out.println("Looser: "+ looser.getName());
