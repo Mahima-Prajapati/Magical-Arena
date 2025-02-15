@@ -36,6 +36,10 @@ public class Main {
 
 	System.out.println("Mahima");
         
+
+        System.out.println("Shivam")
+        System.out.println("DMFoian")
+        
         // Creating a Game with the above players
         Game game = new Game(playerA, playerB);
 
